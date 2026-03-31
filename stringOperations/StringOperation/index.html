@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      .customCss{
+        width: 500px;
+        height: 100px;
+      }
+      /* .inputCss{
+         
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-dark text-light p-2 text-center">String Operation</h1>
+    <div class="container">
+      <form>
+  <div class="mb-3 mt-3 inputCss">
+    <input type="text" class="form-control w-85 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter paragraph here">
+    <div class="bg-secondary mt-3   p-2 text-light customCss" id="Result" style="height: 100px;">
+      Result :
+    </div>
+ </div>
+ 
+
+    <div class="container mt-3 ">
+       <button type="button" class="btn btn-outline-secondary me-1" onclick="countVowels()">check vowels</button><button type="button" class="btn btn-outline-secondary m-1" onclick="longestWord()">Longest string</button><button type="button" class="btn btn-outline-secondary m-1" onclick="CountSpaces()">Count Spaces</button><button type="button" class="btn btn-outline-secondary m-1" onclick="CountLines()">Count New lines</button><button type="button" class="btn btn-outline-secondary m-1" onclick="LowerCase()">Convert to small case</button><button type="button" class="btn btn-outline-secondary m-1" onclick="Capitalize()">Capitalise</button>
+    </div>
+
+     <div class="container mt-3 ">
+       <button type="button" class="btn btn-outline-secondary me-1" onclick="TiltleCase()">Title case</button><button type="button" class="btn btn-outline-secondary m-1" onclick="pallindrome()">check  Pallindrome</button><button type="button" class="btn btn-outline-secondary m-1" onclick="Extract()">Exact first word</button><button type="button" class="btn btn-outline-secondary m-1" onclick="Hypen()">Replace all spaces with new hypen</button><button type="button" class="btn btn-outline-secondary m-1" onclick="Reverse()">Reverse character</button><button type="button" class="btn btn-outline-secondary m-1" onclick="Sorted()">Sort the words</button>
+    </div>
+   
+
+</form>
+    </div>
+    <script src="App.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
