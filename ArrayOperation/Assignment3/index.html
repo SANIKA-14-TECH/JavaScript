@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      form{
+        height: 400px;
+        width: 400px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+      }
+
+      .container{
+        margin-top: 10px;
+      }
+
+      form button{
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+  <div class="mb-3">
+    <input type="text" class="form-control" id="UserInput" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="AddNumber()">Add Number</button>
+   <button type="submit" class="btn btn-primary" onclick="Even()">Show Even</button>
+    <button type="submit" class="btn btn-primary" onclick="Odd()">Show Odd</button>
+     <button type="submit" class="btn btn-primary" onclick="Reset()">Reset</button>
+
+
+     <!-- show output -->
+      <div class="container">
+        <p >Even Number : </p>
+        <input type="text" id="even">
+      </div>
+
+      <div class="container">
+        <p>Odd Number : </p>
+        <input type="text" id="odd">
+      </div>
+</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
