@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <h1 class="text-primary text-center display-4">Project Management</h1>
+    <nav class="ps-5 container">
+        <input type="text" id="searchKey">
+        <button id="searchBtn" class="btn btn-primary">Search<i class="fa-solid fa-magnifying-glass"></i></button>
+        <select id="selectStatus">
+            <option value="">Select status</option>
+            <option value="completed">Completed</option>
+            <option value="In progress">In progress</option>
+        </select>
+
+        <select name="" id="selectPriority">
+            <option value="">Select Priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <button id="filterBtn" class="btn btn-primary ">Filter</button>
+    </nav>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">project title</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Priority</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                </tr>
+            </thead>
+            <tbody id="projectsRows"></tbody>
+        </table>
+
+        <nav aria-label="Page navigation example">
+  <ul class="pagination" id="pagination">
+  </ul>
+</nav>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
